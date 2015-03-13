@@ -268,13 +268,10 @@ public class Extractor {
 		
 		crawledLink.setMetadata(metaDataMap);
 		
-		String[] wordArray = bodyCH.toString().toLowerCase().replaceAll("(^\\s+|\\s+$)", "").split("\\s+");
+		String[] wordArray = bodyCH.toString().toLowerCase().split("\\s+");
 		
 		for(int i = 0; i < wordArray.length; i++){
-			if (wordArray[i].contains(".")){
-				wordArray[i] = wordArray[i].substring(0, wordArray[i].lastIndexOf(".")); 
-			}
-			
+			wordArray[i] = wordArray[i].replaceAll("[^a-zA-Z]", "").toLowerCase();;			
 		}
 		
 //		System.out.println("ARRAY SIZE: " + wordArray.length);
