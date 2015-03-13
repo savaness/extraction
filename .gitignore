@@ -6,3 +6,7 @@ pom.xml.next
 release.properties
 *.json
 
+/target/
+/target/
+/target/
+/target/
