@@ -2,8 +2,6 @@ package extractor;
 
 import java.io.File;
 
-	import org.apache.commons.codec.binary.StringUtils;
-
 	public class Deleter {
 
 	    public static void delLocalFolder(String filePath) {
